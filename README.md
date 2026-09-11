@@ -11,6 +11,7 @@ Aplicacion web para el control de ingresos, gastos y presupuestos.
 ## Requisitos previos
 - Node.js 24+
 - PostgreSQL en ejecucion 
+
 ## Instalacion rapida
 1. Activa el gestor: `corepack enable`
 2. Instala dependencias: `pnpm install`
