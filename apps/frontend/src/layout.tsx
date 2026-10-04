@@ -4,12 +4,12 @@ import './Layout.css'
 export default function Layout() {
     const sidebarLinks = [
 
-        { path: "/Inicio", name: "Inicio"},
-        { path: "/Midinero", name: "Mi dinero"},
-        { path: "/Facturacion", name: "Facturacion"},
-        { path: "/Tarjetas", name: "Tarjetas"},
-        { path: "/Subscripciones", name: "Subscripciones"},
-        { path: "/MiCuenta", name: "Mi cuenta"}
+        { path: "/inicio", name: "Inicio"},
+        { path: "/midinero", name: "Mi dinero"},
+        { path: "/facturacion", name: "Facturacion"},
+        { path: "/tarjetas", name: "Tarjetas"},
+        { path: "/subscripciones", name: "Subscripciones"},
+        { path: "/miCuenta", name: "Mi cuenta"}
         ];
     return(
       <div className="Layout">
