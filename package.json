@@ -4,8 +4,7 @@
   "packageManager": "pnpm@12.3.4",
   "scripts": {
     "dev": "pnpm -r --parallel dev",
-    "build": "pnpm -r build",
-    "install": "pnpm install"
+    "build": "pnpm -r build"
   },
   "devEngines": {
     "packageManager": {
