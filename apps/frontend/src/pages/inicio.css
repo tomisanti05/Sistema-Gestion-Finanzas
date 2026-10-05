@@ -103,3 +103,9 @@
   color: #dc2626;
   font-weight: 600;
 }
+
+@media (max-width: 640px) {
+  .inicio-resumen {
+    flex-direction: column;
+  }
+}
