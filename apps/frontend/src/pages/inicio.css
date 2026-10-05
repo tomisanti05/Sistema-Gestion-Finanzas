@@ -67,3 +67,39 @@
 .inicio-card.ahorro p {
   color: #5b3ce6;
 }
+
+.inicio-seccion {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.inicio-seccion h2 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.inicio-fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.inicio-fila:last-child {
+  border-bottom: none;
+}
+
+.inicio-fila .ingreso {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.inicio-fila .gasto {
+  color: #dc2626;
+  font-weight: 600;
+}
