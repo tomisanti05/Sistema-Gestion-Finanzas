@@ -8,14 +8,17 @@
 
 .inicio h1 {
   color: #111827;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin: 0;
 }
 
 .saldo-card {
-  background-color: #5b3ce6;
+  background: linear-gradient(135deg, #5b3ce6, #7c5cf0);
   color: #ffffff;
   padding: 24px;
   border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(91, 60, 230, 0.25);
 }
 
 .saldo-card h2 {
