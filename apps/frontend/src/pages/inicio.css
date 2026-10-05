@@ -42,10 +42,10 @@
 .inicio-card {
   flex: 1;
   background-color: #ffffff;
-  border: 1px solid #eef0f4;
+  border: 1px solid #dce1ea;
   border-radius: 16px;
   padding: 16px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.10);
 }
 
 .inicio-card h3 {
@@ -75,10 +75,10 @@
 
 .inicio-seccion {
   background-color: #ffffff;
-  border: 1px solid #eef0f4;
+  border: 1px solid #dce1ea;
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.10);
 }
 
 .inicio-seccion h2 {
