@@ -80,14 +80,15 @@
 .inicio-seccion h2 {
   margin: 0 0 12px 0;
   font-size: 1rem;
+  font-weight: 600;
   color: #111827;
 }
 
 .inicio-fila {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  gap: 12px;
+  padding: 12px 0;
   border-bottom: 1px solid #f3f4f6;
   font-size: 0.95rem;
   color: #374151;
