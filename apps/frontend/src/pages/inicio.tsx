@@ -52,8 +52,11 @@ function Inicio() {
         <h2>Últimos movimientos</h2>
         {movimientos.map((m) => (
           <div key={m.concepto} className="inicio-fila">
-            <span>{m.concepto}</span>
-            <span>{m.fecha}</span>
+            <span className="inicio-concepto">
+              <span className={`dot ${m.tipo}`} />
+              {m.concepto}
+            </span>
+            <span className="inicio-fecha">{m.fecha}</span>
             <span className={m.tipo}>
               {m.tipo === 'ingreso' ? '+' : '-'} $ {m.monto.toLocaleString('es-AR')}
             </span>

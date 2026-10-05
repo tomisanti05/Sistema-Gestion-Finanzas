@@ -105,9 +105,29 @@
   min-width: 0;
 }
 
+.inicio-fecha {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
 .inicio-monto {
   font-weight: 600;
   color: #111827;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot.ingreso {
+  background-color: #16a34a;
+}
+
+.dot.gasto {
+  background-color: #dc2626;
 }
 
 .vence-chip {
