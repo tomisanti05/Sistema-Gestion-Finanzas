@@ -97,6 +97,29 @@
   border-bottom: none;
 }
 
+.inicio-concepto {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.inicio-monto {
+  font-weight: 600;
+  color: #111827;
+}
+
+.vence-chip {
+  background-color: #fef3c7;
+  color: #92400e;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
 .inicio-fila .ingreso {
   color: #16a34a;
   font-weight: 600;

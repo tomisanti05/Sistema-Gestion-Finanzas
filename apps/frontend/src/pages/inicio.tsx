@@ -41,9 +41,9 @@ function Inicio() {
         <h2>Próximos vencimientos</h2>
         {vencimientos.map((v) => (
           <div key={v.concepto} className="inicio-fila">
-            <span>{v.concepto}</span>
-            <span>Vence {v.vence}</span>
-            <span>$ {v.monto.toLocaleString('es-AR')}</span>
+            <span className="inicio-concepto">{v.concepto}</span>
+            <span className="vence-chip">Vence {v.vence}</span>
+            <span className="inicio-monto">$ {v.monto.toLocaleString('es-AR')}</span>
           </div>
         ))}
       </section>
