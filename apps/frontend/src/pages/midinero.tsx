@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './midinero.css';
 
 function MiDinero() {
@@ -15,6 +16,12 @@ function MiDinero() {
     { concepto: 'Freelance', fecha: '10/09', monto: 45000, tipo: 'ingreso' },
     { concepto: 'Internet', fecha: '12/09', monto: 8000, tipo: 'gasto' },
   ];
+
+  const [filtro, setFiltro] = useState('todo');
+
+  const movimientosFiltrados = movimientos.filter((m) =>
+    filtro === 'todo' ? true : m.tipo === filtro
+  );
 
   return (
     <div className="midinero">
@@ -37,7 +44,29 @@ function MiDinero() {
 
       <section className="midinero-seccion">
         <h2>Movimientos</h2>
-        {movimientos.map((m) => (
+
+        <div className="midinero-filtros">
+          <button
+            className={filtro === 'todo' ? 'activo' : ''}
+            onClick={() => setFiltro('todo')}
+          >
+            Todo
+          </button>
+          <button
+            className={filtro === 'ingreso' ? 'activo' : ''}
+            onClick={() => setFiltro('ingreso')}
+          >
+            Ingresos
+          </button>
+          <button
+            className={filtro === 'gasto' ? 'activo' : ''}
+            onClick={() => setFiltro('gasto')}
+          >
+            Gastos
+          </button>
+        </div>
+
+        {movimientosFiltrados.map((m) => (
           <div key={m.concepto} className="midinero-fila">
             <span className="midinero-concepto">
               <span className={`dot ${m.tipo}`} />
