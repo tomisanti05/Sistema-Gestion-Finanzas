@@ -1,13 +1,31 @@
+import './account.css';
+
 function Account() {
   return (
-    <div>
+    <div className="account-card">
       <h1>Mi cuenta</h1>
+
       <h2>Información personal</h2>
-      <p>Ian Franco Manfredi</p>
+      <div className="info-row">
+        <div className="avatar-circle">IM</div>
+        <p>Ian Franco Manfredi</p>
+        <button className="btn-edit">Editar</button>
+      </div>
+      <p>Correo electronico: ian.manfredi12@gmail.com</p>
+      <p>Teléfono: 2914368082</p>
+
       <h2>Seguridad</h2>
       <p>Cambiar contraseña</p>
-      <button style={{ color: '#63151c' }}>Eliminar cuenta</button>
-      <button>Cerrar sesión</button>
+      <p>
+        ********* <button className="btn-edit">Editar</button>
+      </p>
+
+      <button className="btn-delete">Eliminar cuenta</button>
+
+      <br />
+      <br />
+
+      <button>Cerrar sesion</button>
     </div>
   );
 }

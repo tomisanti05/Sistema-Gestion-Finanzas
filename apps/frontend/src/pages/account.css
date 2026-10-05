@@ -1,0 +1,35 @@
+.account-card {
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 500px;
+  margin: 32px auto;
+}
+
+.avatar-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-edit {
+  font-size: 13px;
+}
+
+.btn-delete {
+  color: #63151c;
+  border: 1px solid #63151c;
+  background: transparent;
+  padding: 10px 20px;
+}

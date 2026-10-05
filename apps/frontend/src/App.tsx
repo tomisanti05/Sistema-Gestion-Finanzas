@@ -1,7 +1,7 @@
-import Facturacion from './pages/facturacion';
+import Account from './pages/account';
 
 function App() {
-  return <Facturacion />;
+  return <Account />;
 }
 
 export default App;
