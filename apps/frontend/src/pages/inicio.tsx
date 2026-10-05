@@ -7,6 +7,12 @@ function Inicio() {
     { titulo: 'Ahorro', monto: 130000, tipo: 'ahorro' },
   ];
 
+  const vencimientos = [
+    { concepto: 'Boleta de luz', vence: '30/09', monto: 5000 },
+    { concepto: 'Boleta de agua', vence: '30/09', monto: 10000 },
+    { concepto: 'Boleta de gas', vence: '30/09', monto: 3000 },
+  ];
+
   return (
     <div className="inicio">
       <h1>Hola, Nombre 👋</h1>
@@ -24,6 +30,17 @@ function Inicio() {
           </div>
         ))}
       </div>
+
+      <section className="inicio-seccion">
+        <h2>Próximos vencimientos</h2>
+        {vencimientos.map((v) => (
+          <div key={v.concepto} className="inicio-fila">
+            <span>{v.concepto}</span>
+            <span>Vence {v.vence}</span>
+            <span>$ {v.monto.toLocaleString('es-AR')}</span>
+          </div>
+        ))}
+      </section>
     </div>
   );
 }
