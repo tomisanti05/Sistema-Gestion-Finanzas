@@ -12,20 +12,26 @@ export default function Layout() {
         { path: "/miCuenta", name: "Mi cuenta"}
         ];
     return(
-      <div className="Layout">
+        <aside className='sidebar-card'>
+        
+        <div className="sidebar-header">
         <h1>Bienvenido "Nombre"</h1>
+        </div>
         <nav className="sidebar-menu">
-            {sidebarLinks.map((link) => (
-                <NavLink
+                {sidebarLinks.map((link) => (
+                    <NavLink
                     key={link.path}
                     to={link.path}
                     className= {({ isActive }: any) => isActive ? "white" : "gray"}
-                >
-                    {link.name}
-                </NavLink>
-            ))}
+                    >
+                        <div className='link-left'>
+
+                            <span className='link-name'>{link.name}</span>
+                        </div>
+                    </NavLink>
+                ))}
         </nav>
-      </div>
+    </aside>
     )
     
 }
