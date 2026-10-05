@@ -1,0 +1,29 @@
+.Layout {
+  width: 250px;
+  background-color: white; 
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+    height: 100%;
+}
+
+.sidebar-menu{
+   display: flex;
+   flex-direction: column;
+   gap:10px;
+   margin-top: 20px;
+   height: 100%;
+}
+
+.sidebar-menu a {
+    color: rgb(240, 204, 240);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.sidebar-menu a.gray {
+    color: gray;
+}
