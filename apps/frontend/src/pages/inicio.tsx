@@ -13,6 +13,12 @@ function Inicio() {
     { concepto: 'Boleta de gas', vence: '30/09', monto: 3000 },
   ];
 
+  const movimientos = [
+    { concepto: 'Sueldo', fecha: '01/09', monto: 250000, tipo: 'ingreso' },
+    { concepto: 'Supermercado', fecha: '03/09', monto: 25000, tipo: 'gasto' },
+    { concepto: 'Transporte', fecha: '05/09', monto: 12000, tipo: 'gasto' },
+  ];
+
   return (
     <div className="inicio">
       <h1>Hola, Nombre 👋</h1>
@@ -38,6 +44,19 @@ function Inicio() {
             <span>{v.concepto}</span>
             <span>Vence {v.vence}</span>
             <span>$ {v.monto.toLocaleString('es-AR')}</span>
+          </div>
+        ))}
+      </section>
+
+      <section className="inicio-seccion">
+        <h2>Últimos movimientos</h2>
+        {movimientos.map((m) => (
+          <div key={m.concepto} className="inicio-fila">
+            <span>{m.concepto}</span>
+            <span>{m.fecha}</span>
+            <span className={m.tipo}>
+              {m.tipo === 'ingreso' ? '+' : '-'} $ {m.monto.toLocaleString('es-AR')}
+            </span>
           </div>
         ))}
       </section>
