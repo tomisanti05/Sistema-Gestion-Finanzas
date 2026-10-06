@@ -3,6 +3,7 @@ import Facturacion from './pages/facturacion.tsx';
 import Account from './pages/account.tsx';
 import Layout from './pages/layout.tsx';
 import Tarjetas from './pages/tarjetas.tsx'
+import Inicio from './pages/inicio.tsx';
 import MiDinero from './pages/midinero.tsx';
 import './App.css'
 
@@ -15,7 +16,7 @@ function App() {
 
           <Route path='/' element={<Navigate to="/inicio" replace />} />
 
-          <Route path="/inicio" element={<h2>Página de Inicio</h2>} />
+          <Route path="/inicio" element={<Inicio />} />
           <Route path="/midinero" element={<MiDinero />} />
           <Route path="/facturacion" element={<Facturacion />} />
           <Route path="/tarjetas" element={<Tarjetas />} />
