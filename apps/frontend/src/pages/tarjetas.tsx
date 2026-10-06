@@ -34,7 +34,24 @@ export default function Tarjetas() {
               </p>
             </div>
 
-            <div className="historial tarjetas"> historial de tarjetas</div>
+            <div className="historial tarjetas">
+              <h4>Historial</h4>
+              <div className="card-historial">
+                <span className="fecha-consumo">fecha de consumo | 08/10  </span>
+                <span className="lugar">Cinemacenter BBCA </span>
+                <span className="monto">Costo: $10500</span>
+              </div>
+              <div className="card-historial">
+                <span className="fecha-consumo">fecha de consumo | 08/10  </span>
+                <span className="lugar">McDonalds </span>
+                <span className="monto">Costo: $19000</span>
+              </div>
+              <div className="card-historial">
+                <span className="fecha-consumo">fecha de consumo | 08/10  </span>
+                <span className="lugar">Lucciano's </span>
+                <span className="monto">Costo: $6500</span>
+              </div>
+            </div>
         </div>
     </div>
         
