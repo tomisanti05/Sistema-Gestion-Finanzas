@@ -1,7 +1,8 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import Facturacion from './pages/facturacion';
+import Facturacion from './pages/facturacion.tsx';
 import Account from './pages/account.tsx';
 import Layout from './pages/layout.tsx';
+import Tarjetas from './pages/tarjetas.tsx'
 import './App.css'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Route path="/inicio" element={<h2>Página de Inicio</h2>} />
           <Route path="/midinero" element={<h2>Página de Mi Dinero</h2>} />
           <Route path="/facturacion" element={<Facturacion />} />
-          <Route path="/tarjetas" element={<h2>Página de Tarjetas</h2>} />
+          <Route path="/tarjetas" element={<Tarjetas />} />
           <Route path="/subscripciones" element={<h2>Página de Subscripciones</h2>} />
           <Route path="/miCuenta" element={<Account />} />
 
