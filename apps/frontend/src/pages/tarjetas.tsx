@@ -101,13 +101,23 @@ const siguienteTarjeta = () => {
           <button 
               type="button" 
               onClick={anteriorTarjeta}
+              style={{
+                borderColor:"var(--color-primary)",
+                borderRadius:"8px",
+                marginBottom:"10px",
+                marginRight:"8px"
+              }}
               >
               <ChevronLeft size={18} />
             </button>
             <button 
               type="button" 
               onClick={siguienteTarjeta}
-              
+              style={{
+                borderColor:"var(--color-primary)",
+                borderRadius:"8px",
+                marginBottom:"10px"
+              }}
             >
               <ChevronRight size={18} />
             </button>
