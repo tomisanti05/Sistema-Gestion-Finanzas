@@ -103,8 +103,10 @@
 }
 
 .card-historial{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    
+    grid-template-columns: 110px 1fr 100px;
+    gap:1rem;
     align-items: center;
     background-color: var(--color-bg-surface);
     padding: 1.1rem 1.25rem;
@@ -119,6 +121,7 @@
     background-color: var(--color-danger-bg);
     padding: 10px;
     border-radius: 8px;
+    justify-self: end;
 }
 .card-historial .fecha-consumo{
     font-weight: 600;
@@ -129,6 +132,9 @@
     background-color: var(--color-bg-hover)
 }
 .card-historial .lugar{
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
     font-weight: 600;
     font-size: 0.95rem;
     color: var(--color-text-primary);
