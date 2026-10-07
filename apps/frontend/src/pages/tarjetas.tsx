@@ -15,9 +15,49 @@ import {
   Bike,
   CreditCard, ShieldCheck, Calendar1, Calendar
 } from "lucide-react"
+
 export default function Tarjetas() {
-  const [numero, setNumero] = useState("4876 5678 2364 5978")
-  const tipo = numero.startsWith("4") ? "visa" : "mastercard"
+  interface Tarjeta {
+  id: string;
+  numero: string;
+  codigo: string;
+  vencimiento: string;
+  estaPausada: boolean;
+  } 
+  interface Transaccion {
+  id: number;
+  fecha: string;
+  lugar: string;
+  monto: number;
+  Icono: LucideIcon;
+  }
+  const [tarjetas, setTarjetas] = useState<Tarjeta[]>([
+  {
+    id: "card_1",
+    numero: "4876 5678 2364 5978",
+    codigo: "060",
+    vencimiento: "10/31",
+    estaPausada: false,
+  },
+  {
+    id: "card_2",
+    numero: "5412 7512 3412 8901",
+    codigo: "415",
+    vencimiento: "05/29",
+    estaPausada: false,
+  },
+])
+const historial_transacciones: Transaccion[] = [
+  { id: 1, fecha: "08 Oct", lugar: "Cinemacenter BBCA", monto: 10500, Icono: Film },
+  { id: 2, fecha: "08 Oct", lugar: "McDonalds", monto: 19000, Icono: Utensils },
+  { id: 3, fecha: "08 Oct", lugar: "Lucciano's", monto: 6500, Icono: IceCream },
+  { id: 4, fecha: "07 Oct", lugar: "YPF Estación", monto: 24800, Icono: Fuel },
+  { id: 5, fecha: "06 Oct", lugar: "Supermercado Coto", monto: 42150, Icono: ShoppingCart },
+  { id: 6, fecha: "05 Oct", lugar: "Steam Games", monto: 15900, Icono: Gamepad2 },
+  { id: 7, fecha: "04 Oct", lugar: "Farmacia del Pueblo", monto: 8900, Icono: Pill },
+  { id: 8, fecha: "02 Oct", lugar: "Spotify Argentina", monto: 4200, Icono: Music2 },
+  { id: 9, fecha: "01 Oct", lugar: "PedidosYa", monto: 11300, Icono: Bike },
+];
   
   return (
   
