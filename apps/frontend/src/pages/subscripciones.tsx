@@ -1,4 +1,5 @@
   import { useState } from "react";
+  import './subscripciones.css'
   interface Subscripcion { 
       id: string;
       proveedor: string;
@@ -48,21 +49,25 @@ export default function Subscripciones() {
           Total Gastado $ {totalGasto}  
         </span>
         <span className="proximo-cobro">
-            <button>
+            
               Netflix 12 Oct
-            </button>
+            
         </span>
-        <span className="nueva-sub"></span>  
+        <span className="nueva-sub">
+            <button>
+              añadir subscripcion
+            </button>
+        </span>  
       </div>  
 
       <div className="subscripciones">
         {subs.map((sub) =>(
           <div key={sub.id} className="subscripcion-card"> 
-            <span className="proveedor">({sub.proveedor})</span>
-            <span className="plan-nombre">({sub.plan})</span>
-            <span className="tarjeta-info">({sub.numTarjeta})</span>
-            <span className="dia-cobro">({sub.diaCobro})</span>
-            <span className="monto">({sub.monto})</span>
+            <span className="proveedor">{sub.proveedor}</span>
+            <span className="plan-nombre">{sub.plan}</span>
+            <span className="tarjeta-info">{sub.numTarjeta}</span>
+            <span className="dia-cobro">{sub.diaCobro}</span>
+            <span className="monto">-$ {sub.monto}</span>
           </div>
         )
       )}
