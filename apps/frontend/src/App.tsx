@@ -5,6 +5,7 @@ import Layout from './pages/layout.tsx';
 import Tarjetas from './pages/tarjetas.tsx'
 import Inicio from './pages/inicio.tsx';
 import MiDinero from './pages/midinero.tsx';
+import Subscripciones from './pages/subscripciones.tsx'
 import './App.css'
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path="/midinero" element={<MiDinero />} />
           <Route path="/facturacion" element={<Facturacion />} />
           <Route path="/tarjetas" element={<Tarjetas />} />
-          <Route path="/subscripciones" element={<h2>Página de Subscripciones</h2>} />
+          <Route path="/subscripciones" element={<Subscripciones />} />
           <Route path="/miCuenta" element={<Account />} />
 
           <Route path="*" element={<h2>404 - Página no encontrada</h2>} />
