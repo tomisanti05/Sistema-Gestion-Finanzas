@@ -38,7 +38,8 @@
 .subscripciones {
     display: flex;
     flex-direction: column;
-    gap:1 rem
+    gap: 1rem;
+    
 }
 .subscripcion-card{
     display: grid;
@@ -48,6 +49,7 @@
     padding: 1.5rem;
     background-color: var(--color-bg-surface);
     border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
 }
 
 .subscripcion-card .proveedor{
