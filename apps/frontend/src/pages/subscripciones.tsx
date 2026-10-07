@@ -42,7 +42,7 @@ export default function Subscripciones() {
   return (
     <div className="subscripciones-body">
       <div className="subscripciones-header">
-         <h1>Tus Subscripciones</h1>
+         <h1>Mis Subscripciones</h1>
       </div>
       <div className="metricas">
         <span className="gasto-total">
