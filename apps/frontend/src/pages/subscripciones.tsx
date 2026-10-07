@@ -6,7 +6,7 @@
       plan:string;
       numTarjeta: string;
       monto:number;
-      diaCobro: number;
+      diaCobro: string;
   } 
 
   const SubscripcionesPrueba: Subscripcion [] = [
@@ -16,7 +16,7 @@
     plan: "Spotify Premium",
     numTarjeta: "Visa •••• 5978",
     monto: 4200,
-    diaCobro: 10,
+    diaCobro: "10 Nov",
   },
   {
     id: "sub-2",
@@ -24,7 +24,7 @@
     plan: "Netflix Estándar",
     numTarjeta: "Master •••• 8901",
     monto: 11500,
-    diaCobro: 12,
+    diaCobro: "12 Oct",
   },
   {
     id: "sub-3",
@@ -32,7 +32,7 @@
     plan: "Anthropic Pro",
     numTarjeta: "Master •••• 8901",
     monto: 22000,
-    diaCobro: 25,
+    diaCobro: "25 Oct",
   },
   ]
 export default function Subscripciones() {
@@ -55,7 +55,7 @@ export default function Subscripciones() {
         </span>
         <span className="nueva-sub">
             <button>
-              añadir subscripcion
+               + Añadir subscripcion
             </button>
         </span>  
       </div>  
