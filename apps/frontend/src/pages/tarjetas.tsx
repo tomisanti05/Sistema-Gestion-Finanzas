@@ -79,9 +79,6 @@ export default function Tarjetas() {
   
   const tipo = tarjetaActiva.numero.trimStart().startsWith("4") ? "visa" : "mastercard";
 
-  const historialFiltrado = HISTORIAL_TOTAL.filter(
-    (item) => item.tarjetaId === tarjetaActiva.id
-  )
   const anteriorTarjeta = () => {
   setTarjetaIndex((prev) => (prev === 0 ? tarjetas.length - 1 : prev - 1));
 };
