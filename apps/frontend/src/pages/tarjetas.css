@@ -20,6 +20,7 @@
     width: 100%;
 }
 .numero-tarjeta {
+  text-align: left;
   background-color: var(--color-primary-light);
   color: var(--color-text-primary);
   border: none;
@@ -29,6 +30,7 @@
 }
 
 .vencimiento-tarjeta {
+  text-align: left;
   background-color: var(--color-primary-light);
   color: var(--color-text-primary);
   border: none;
@@ -37,6 +39,7 @@
   font-weight: 600;
 }
 .codigo-tarjeta {
+  text-align: left;
   background-color: var(--color-primary-light);
   color: var(--color-text-primary);
   border: none;
@@ -67,7 +70,7 @@
     display: flex;
     background-color: var(--color-bg-surface);
     margin-top: 20px;
-    padding: 40px;
+    padding: 20px;
     border: 1px;
     border-color: var(--color-icon-muted);
     border-radius: 8px;

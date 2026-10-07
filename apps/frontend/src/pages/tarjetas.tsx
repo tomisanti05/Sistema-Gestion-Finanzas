@@ -1,6 +1,20 @@
 import { useState } from "react"
 import './tarjetas.css'
-
+import { 
+  Pause, 
+  Trash2, 
+  Pencil, 
+  Film, 
+  Utensils, 
+  IceCream, 
+  Fuel, 
+  ShoppingCart, 
+  Gamepad2, 
+  Pill, 
+  Music2, 
+  Bike,
+  CreditCard, ShieldCheck, Calendar1, Calendar
+} from "lucide-react"
 export default function Tarjetas() {
   const [numero, setNumero] = useState("4876 5678 2364 5978")
   const tipo = numero.startsWith("4") ? "visa" : "mastercard"
@@ -27,11 +41,21 @@ export default function Tarjetas() {
 
         <div className="tarjetas-descripcion">
           <div className="datos-tarjeta">
-            <p className="numero-tarjeta"> numero: {numero} </p>
-            <p className="codigo-tarjeta"> codigo: 060 </p>
-            <p className="vencimiento-tarjeta"> vencimiento: 10/31 </p>
+            <p className="numero-tarjeta"> <CreditCard size={20} /> Numero 
+            <br />
+              {numero} 
+            </p>
+            <p className="codigo-tarjeta"> <ShieldCheck size={20} /> Codigo  
+              <br />
+              060 
+              </p>
+            <p className="vencimiento-tarjeta"> <Calendar1 size={20}/> Vencimiento 
+              <br />
+              10/31 
+              </p>
             <button>
-              editar datos
+              <Pencil size={16}/>
+              Editar datos
             </button>
           </div> 
         </div>
@@ -39,11 +63,15 @@ export default function Tarjetas() {
         <div className="tarjetas-opciones">
           <div className="boton-pausar">
             <button>
+              <Pause size={16} />
+              <br />
               Pausar tarjeta  
             </button>
           </div>
           <div className="boton-borrar">
             <button>
+            <Trash2 size={16} />
+            <br />
               Borrar tarjeta
             </button>
           </div>
@@ -56,54 +84,54 @@ export default function Tarjetas() {
       <div className="historial-tarjetas">
         <h2>Historial</h2>
         <div className="card-historial">
-          <span className="fecha-consumo">fecha de consumo | 08/10  </span>
-          <span className="lugar">Cinemacenter BBCA </span>
-          <span className="monto">Costo: $10500</span>
+          <span className="fecha-consumo"><Calendar size={16}/> fecha de consumo | 08 Oct  </span>
+          <span className="lugar"><Film size={16}/> Cinemacenter BBCA </span>
+          <span className="monto">- $10500</span>
         </div>
         <div className="card-historial">
-          <span className="fecha-consumo">fecha de consumo | 08/10  </span>
-          <span className="lugar">McDonalds </span>
-          <span className="monto">Costo: $19000</span>
+          <span className="fecha-consumo"><Calendar size={16}/> fecha de consumo | 08 Oct  </span>
+          <span className="lugar"><Utensils size={16}/> McDonalds </span>
+          <span className="monto">- $19000</span>
         </div>
         <div className="card-historial">
-          <span className="fecha-consumo">fecha de consumo | 08/10  </span>
-          <span className="lugar">Lucciano's </span>
-          <span className="monto">Costo: $6500</span>
+          <span className="fecha-consumo"><Calendar size={16}/> fecha de consumo | 08 Oct  </span>
+          <span className="lugar"><IceCream size={16}/> Lucciano's </span>
+          <span className="monto">- $6500</span>
         </div>
         <div className="card-historial">
-          <span className="fecha-consumo">fecha de consumo | 07/10</span>
-          <span className="lugar">YPF Estación</span>
-          <span className="monto">Costo: $24800</span>
-        </div>
-
-        <div className="card-historial">
-          <span className="fecha-consumo">fecha de consumo | 06/10</span>
-          <span className="lugar">Supermercado Coto</span>
-          <span className="monto">Costo: $42150</span>
+          <span className="fecha-consumo"> <Calendar size={16}/> fecha de consumo | 07 Oct</span>
+          <span className="lugar"><Fuel size={16}/> YPF Estación</span>
+          <span className="monto">- $24800</span>
         </div>
 
         <div className="card-historial">
-          <span className="fecha-consumo">fecha de consumo | 05/10</span>
-          <span className="lugar">Steam Games</span>
-          <span className="monto">Costo: $15900</span>
+          <span className="fecha-consumo"> <Calendar size={16}/> fecha de consumo | 06 Oct</span>
+          <span className="lugar"> <ShoppingCart size={16}/> Supermercado Coto</span>
+          <span className="monto">- $42150</span>
         </div>
 
         <div className="card-historial">
-          <span className="fecha-consumo">fecha de consumo | 04/10</span>
-          <span className="lugar">Farmacia del Pueblo</span>
-          <span className="monto">Costo: $8900</span>
+          <span className="fecha-consumo"> <Calendar size={16}/> fecha de consumo | 05 Oct</span>
+          <span className="lugar"><Gamepad2 size={16}/> Steam Games</span>
+          <span className="monto">- $15900</span>
         </div>
 
         <div className="card-historial">
-          <span className="fecha-consumo">fecha de consumo | 02/10</span>
-          <span className="lugar">Spotify Argentina</span>
-          <span className="monto">Costo: $4200</span>
+          <span className="fecha-consumo"><Calendar size={16}/> fecha de consumo | 04 Oct</span>
+          <span className="lugar"><Pill size={16} /> Farmacia del Pueblo</span>
+          <span className="monto">- $8900</span>
         </div>
 
         <div className="card-historial">
-          <span className="fecha-consumo">fecha de consumo | 01/10</span>
-          <span className="lugar">PedidosYa</span>
-          <span className="monto">Costo: $11300</span>
+          <span className="fecha-consumo"><Calendar size={16}/> fecha de consumo | 02 Oct</span>
+          <span className="lugar"><Music2 size={16} /> Spotify Argentina</span>
+          <span className="monto">- $4200</span>
+        </div>
+
+        <div className="card-historial">
+          <span className="fecha-consumo"><Calendar size={16}/> fecha de consumo | 01 Oct</span>
+          <span className="lugar"><Bike size={16}/> PedidosYa</span>
+          <span className="monto"> - $11300</span>
         </div>
       </div>
     </div> 
